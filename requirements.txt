@@ -12,3 +12,7 @@ boto3
 fastapi
 uvicorn
 streamlit
+
+# --- Tests & Qualité ---
+pytest
+httpx
