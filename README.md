@@ -43,3 +43,16 @@ L'architecture est de type **Microservices découplée** pour garantir la scalab
 1. **Backend** : FastAPI hébergé sur **AWS App Runner**.
 2. **Frontend** : Interface Streamlit (utilisable en mode Cloud via AWS App Runner ou localement en mode "Hybride").
 3. **Stockage** : **AWS S3** pour les modèles et datasets, **AWS ECR** pour le registre d'images Docker.
+
+---
+
+## 🚀 Installation Rapide pour lancer le Frontend en local
+(Si le frontend Streamlit créé sur AWS App Runner ne charge pas) : 
+
+1. **Installation des dépendances :**
+   ```bash
+   pip install -r requirements.txt
+
+2. **Lancement local du Frontend :**
+   ```bash
+   streamlit run app.py
