@@ -1,8 +1,14 @@
 # .gitignore
 __pycache__/
-*.py[cod]
-.ipynb_checkpoints/
-.env
-venv/
+*.pyc
 .DS_Store
-# data/*.csv
+.env
+.venv
+venv/
+.streamlit/
+*.tfstate
+*.tfstate.backup
+.terraform/
+models/*.bin
+models/*.pt
+data/*.csv

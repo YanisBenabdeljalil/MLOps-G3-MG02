@@ -1,0 +1,14 @@
+# --- Cœur du projet NLP ---
+pandas
+numpy<2
+sentence-transformers
+torch
+scikit-learn
+
+# --- Infrastructure & Data Pipeline ---
+boto3
+
+# --- API & Interface ---
+fastapi
+uvicorn
+streamlit

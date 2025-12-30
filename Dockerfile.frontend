@@ -1,0 +1,18 @@
+# Utilisation d'une image Python légère
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Installation des librairies nécessaires pour le frontend
+RUN pip install streamlit pandas requests plotly
+
+# Copie de l'application et du logo
+COPY app.py .
+COPY logo.png . 
+
+# Exposition du port Streamlit
+EXPOSE 8501
+
+# Commande de lancement standard
+# On force juste l'adresse 0.0.0.0 pour qu'AWS puisse accéder au conteneur
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
