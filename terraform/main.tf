@@ -70,7 +70,7 @@ resource "aws_apprunner_service" "api_service" {
         }
       }
     }
-    auto_deployments_enabled = false
+    auto_deployments_enabled = true
   }
 
   instance_configuration {
